@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}

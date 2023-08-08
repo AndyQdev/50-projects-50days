@@ -1,0 +1,87 @@
+/*General*/
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex; /* Hace que se adapte al body */ 
+    justify-content: center; /* Centra los laterales */
+    align-items: center; /* Centra los items arriba y abajo */
+    font-family: sans-serif;/* Tipo de letra */
+    background-color: gray;
+}
+
+/* GitHub */
+.github {
+    background-color: purple;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 3px black;
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+}
+/* Search */
+.search input {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.search {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+/* UserCard */
+.usercard {
+    color: white;
+    font-size: 1.5rem;
+}
+.usercard img{
+    display: block; /*Hace que ocupe todo el espacio y si hay algo nuevo va para abajo de el*/
+    margin: 0 auto;
+    max-width: 200px;
+    border: 3px solid goldenrod; 
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px black;
+}
+.usercard h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+.usercard p {
+    text-align: center;
+}
+
+/* Data */
+.data {
+    margin-bottom: 2rem;
+}
+.data ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* Repositorios */
+.repos {
+    text-align: center;
+}
+.repos a {
+    text-decoration: none;
+    color: white;
+    background-color: goldenrod;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    margin: .4rem;
+    display: inline-block;
+}
