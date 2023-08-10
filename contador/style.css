@@ -69,11 +69,11 @@ body{
 }
 .nums span.in{
     transform: translate(-50%, -50%) rotate(0deg);
-    animation: goIn 0.5s ease-in-out;
+    animation: goIn .5s ease-in-out;
 }
 
 .nums span.out {
-  animation: goOut 0.5s ease-in-out;
+  animation: goOut .5s ease-in-out;
 }
 @keyframes goIn {
     0% {
@@ -110,7 +110,7 @@ body{
     margin: 5px;
     text-transform: uppercase;
   }
-  #replay{
+  .ready{
     background-color: #3498db;
     border-radius: 3px;
     border: none;
@@ -120,16 +120,16 @@ body{
     display: inline-block;
     cursor: pointer;
     transition: all 5s;
-    margin-top: -15px;
+    /* margin-top: -15px; */
     font-size: 20px; 
 }
-#replay span{
+.ready span{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: .3s;
 }
-#replay span::after{
+.ready span::after{
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -137,10 +137,10 @@ body{
     right: -25px;
     transition: 0.5s;
 }
-#replay:hover span{
+.ready:hover span{
     padding-right: 25px;
 }
-#replay:hover span::after{
+.ready:hover span::after{
     opacity: 1;
     right: 0;
 }
