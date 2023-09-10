@@ -16,10 +16,20 @@ h1{
 }
 div{
     position: absolute;
-    bottom: 20px;
     background-color: rgba(0,0,0,0.1);
     padding: 10px 20px;
     border-radius: .5rem;
+}
+.inputButtom{
+    bottom: 20px;
+}
+.inputTop{
+    top: 20px;
+    
+}
+.inputTop input{
+    color: white;
+    width: 500px;
 }
 input{
     font-size: 1.2rem;

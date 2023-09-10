@@ -1,6 +1,7 @@
 const textHtml = document.getElementById("text");
 const ValueSpeed = document.getElementById("speed");
-const textContent = "Soy un puto Crack!!";
+const ContentInput = document.getElementById("textInput");
+let textContent = ContentInput.value;
 let idx = 1;
 let speed = 300 / ValueSpeed.value;
 
@@ -14,5 +15,5 @@ function writeText(){
     }
     setTimeout(writeText, speed);
 }
-
+ContentInput.addEventListener("input", (e) => textContent = e.target.value)
 ValueSpeed.addEventListener("input", (e) => speed = 300 / e.target.value)
